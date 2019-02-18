@@ -3,19 +3,28 @@ h1 {
 }
 
 .shapes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.shape {
 	border: 1px solid lightgray;
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 	padding: 20px;
 }
 
-.shapes + .shapes {
-	border-top: none;
-}
-
-.shapes--elements {
+.shape--element {
 	display: flex;
 	align-items: center;
     flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.btn-calculate {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px;
 }
