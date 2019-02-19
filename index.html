@@ -6,20 +6,25 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 </head>
 <body>
-	<h1>Calculate area of shapes</h1>
+	<div class="header">
+		<h1>Calculate area of shapes</h1>
+		<button class="btn-calculate" onclick="calculateAreas()">Calculate areas</button>
+	</div>
 	<div class="shapes">
 		<div class="shape">
 			<h2>Square</h2>
 			<div class="shape--element">
 				<div>
-					<div>
-						<b><span>A</span> <span>=</span> <span>a</span><span>2</span></b>
+					<div class="values-shape">
+						<b><span>A</span> <span>=</span> <span>a</span><span class="power">2</span></b>
 					</div>
-					<div>
+					<div class="values-shape">
 						<b><span>A</span> <span>=</span> <span id="square-area">0</span></b>
 					</div>
-					<label for="side"><b>a</b> Side</label>
-					<input id="side" type="number" name="square" placeholder="Enter a value">
+					<div class="label-input">
+						<label for="side"><b class="values">a</b> Side</label>
+						<input id="side" class="input-value" type="number" name="square" placeholder="Enter a value">
+					</div>
 				</div>
 				<img src="images/square.png">
 			</div>
@@ -28,16 +33,20 @@
 			<h2>Rectangle</h2>
 			<div class="shape--element">
 				<div>
-					<div>
+					<div class="values-shape">
 						<b><span>A</span> <span>=</span> <span>w</span> <span>l</span></b>
 					</div>
-					<div>
+					<div class="values-shape">
 						<b><span>A</span> <span>=</span> <span id="rectangle-area">0</span></b>
 					</div>
-					<label for="length"><b>l</b> Length</label>
-					<input id="length" type="number" name="length" placeholder="Enter a value">
-					<label for="width"><b>w</b> Width</label>
-					<input id="width" type="number" name="width" placeholder="Enter a value">
+					<div class="label-input">
+						<label for="length"><b class="values">l</b> Length</label>
+						<input id="length" class="input-value" type="number" name="length" placeholder="Enter a value">
+					</div>
+					<div class="label-input">
+						<label for="width"><b class="values">w</b> Width</label>
+						<input id="width" class="input-value" type="number" name="width" placeholder="Enter a value">
+					</div>
 				</div>
 				<img src="images/rectangle.png">
 			</div>
@@ -46,14 +55,16 @@
 			<h2>Circle</h2>
 			<div class="shape--element">
 				<div>
-					<div>
-						<b><span>A</span> <span>=</span> <span>π</span> <span>r</span><span>2</span></b>
+					<div class="values-shape">
+						<b><span>A</span> <span>=</span> <span>π</span> <span>r</span><span class="power">2</span></b>
 					</div>
-					<div>
+					<div class="values-shape">
 						<b><span>A</span> <span>=</span> <span id="circle-area">0</span></b>
 					</div>
-					<label for="radius"><b>r</b> Radius</label>
-					<input id="radius" type="number" name="circle" placeholder="Enter a value">
+					<div class="label-input">
+						<label for="radius"><b class="values">r</b> Radius</label>
+						<input id="radius" class="input-value" type="number" name="circle" placeholder="Enter a value">
+					</div>
 				</div>
 				<img src="images/circle.png">
 			</div>
@@ -62,22 +73,33 @@
 			<h2>Triangle</h2>
 			<div class="shape--element">
 				<div>
-					<div>
-						<b><span>A</span> <span>=</span> <span>h</span><span>b</span> <span>b</span><span>2</span></b>
+					<div class="values-shape">
+						<b class="calc-division">
+							<div class="division-area">
+								<span>A</span>
+								<span> = </span> 
+							</div>
+							<div class="division">
+								<span></span>h</span><span class="power-reversi">b</span><span>b</span><span class="divider"></span><span>2</span>
+							</div>
+						</b>
 					</div>
-					<div>
+					<div class="values-shape">
 						<b><span>A</span> <span>=</span> <span id="triangle-area">0</span></b>
 					</div>
-					<label for="base"><b>b</b> Base</label>
-					<input id="base" type="number" name="base" placeholder="Enter a value">
-					<label for="height"><b><span>h</span><span>b</span></b> Height</label>
-					<input id="height" type="number" name="height" placeholder="Enter a value">
+					<div class="label-input">
+						<label for="base"><b class="values">b</b> Base</label>
+						<input id="base" class="input-value" type="number" name="base" placeholder="Enter a value">
+					</div>
+					<div class="label-input">
+						<label for="height"><b class="values"><span>h</span><span class="power-reversi">b</span></b> Height</label>
+						<input id="height" class="input-value" type="number" name="height" placeholder="Enter a value">
+					</div>
 				</div>
 				<img src="images/triangle.png">
 			</div>
 	</div>
 	</div>
-	<button class="btn-calculate" onclick="calculateAreas()">Calculate areas</button>
 	<script type="text/javascript" src="scripts/PromiseArea.js"></script>
 	<script type="text/javascript" src="scripts/javascript.js"></script>
 </body>
