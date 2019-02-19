@@ -1,6 +1,5 @@
 
 
-// Complete the calculateArea function below.
 // It returns a Promise which on success, returns area of the shape, and on failure returns [-1].
 let calculateArea = (shape, values) => {
     let promise = new Promise((resolve, reject) => {
@@ -12,7 +11,6 @@ let calculateArea = (shape, values) => {
             area = values.reduce((reducer, value) => reducer * value, 1);
         }
         if (shape === "circle") {
-            console.log(values);
             let radius = values[0] * values[0];
             let notRoundedArea = Math.PI * radius;
             area = Math.floor(notRoundedArea * 10) / 10;
@@ -26,7 +24,6 @@ let calculateArea = (shape, values) => {
     return promise;
 }
 
-// Complete the generateArea function below.
 // It returns a Promise which on success, returns an array of areas of all the shapes and on failure, returns [-1].
 let getAreas = (shapes, values_arr) => {
     let promise = new Promise((resolve, reject) => {
