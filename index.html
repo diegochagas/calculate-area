@@ -8,97 +8,146 @@
 <body>
 	<div class="header">
 		<h1>Calculate area of shapes</h1>
-		<button class="btn-calculate" onclick="calculateAreas()">Calculate areas</button>
+		<button class="header--btn-calculate" onclick="calculateAreas()">Click to calculate areas</button>
 	</div>
 	<div class="shapes">
 		<div class="shape">
-			<h2>Square</h2>
-			<div class="shape--element">
+			<h2 class="shape--title">Square</h2>
+			<div class="shape--container">
 				<div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span>a</span><span class="power">2</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span>a</span><span class="power">2</span>
+						</b>
 					</div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span id="square-area">0</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span id="square-area">0</span>
+						</b>
 					</div>
-					<div class="label-input">
-						<label for="side"><b class="values">a</b> Side</label>
-						<input id="side" class="input-value" type="number" name="square" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="side">
+							<b class="sign-value">a</b>
+							<span>Side</span>
+						</label>
+						<input id="side" class="field-value" type="number" name="square" placeholder="Enter a value">
 					</div>
 				</div>
 				<img src="images/square.png">
 			</div>
 		</div>
 		<div class="shape">
-			<h2>Rectangle</h2>
-			<div class="shape--element">
+			<h2 class="shape--title">Rectangle</h2>
+			<div class="shape--container">
 				<div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span>w</span> <span>l</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span>w</span>
+							<span>l</span>
+						</b>
 					</div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span id="rectangle-area">0</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span id="rectangle-area">0</span>
+						</b>
 					</div>
-					<div class="label-input">
-						<label for="length"><b class="values">l</b> Length</label>
-						<input id="length" class="input-value" type="number" name="length" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="length">
+							<b class="sign-value">l</b>
+							<span>Length</span>
+						</label>
+						<input id="length" class="field-value" type="number" name="length" placeholder="Enter a value">
 					</div>
-					<div class="label-input">
-						<label for="width"><b class="values">w</b> Width</label>
-						<input id="width" class="input-value" type="number" name="width" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="width">
+							<b class="sign-value">w</b>
+							<span>Width</span>
+						</label>
+						<input id="width" class="field-value" type="number" name="width" placeholder="Enter a value">
 					</div>
 				</div>
 				<img src="images/rectangle.png">
 			</div>
 		</div>
 		<div class="shape">
-			<h2>Circle</h2>
-			<div class="shape--element">
+			<h2 class="shape--title">Circle</h2>
+			<div class="shape--container">
 				<div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span>π</span> <span>r</span><span class="power">2</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span>π</span>
+							<span>r</span><span class="power">2</span>
+						</b>
 					</div>
-					<div class="values-shape">
-						<b><span>A</span> <span>=</span> <span id="circle-area">0</span></b>
+					<div class="shape--container__formulas">
+						<b>
+							<span>A</span>
+							<span>=</span>
+							<span id="circle-area">0</span>
+						</b>
 					</div>
-					<div class="label-input">
-						<label for="radius"><b class="values">r</b> Radius</label>
-						<input id="radius" class="input-value" type="number" name="circle" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="radius">
+							<b class="sign-value">r</b>
+							<span>Radius</span>
+						</label>
+						<input id="radius" class="field-value" type="number" name="circle" placeholder="Enter a value">
 					</div>
 				</div>
 				<img src="images/circle.png">
 			</div>
 		</div>
 		<div class="shape">
-			<h2>Triangle</h2>
-			<div class="shape--element">
+			<h2 class="shape--title">Triangle</h2>
+			<div class="shape--container">
 				<div>
-					<div class="values-shape">
-						<b class="calc-division">
-							<div class="division-area">
+					<div class="shape--container__formulas">
+						<b class="formulas--division">
+							<div class="formulas--division__symbols">
 								<span>A</span>
-								<span> = </span> 
+								<span>=</span> 
 							</div>
-							<div class="division">
-								<span></span>h</span><span class="power-reversi">b</span><span>b</span><span class="divider"></span><span>2</span>
+							<div class="formulas--division__symbols">
+								<span>h</span><span class="power-reversi">b</span>
+								<span>b</span>
+								<span class="symbols--divider"></span>
+								<span>2</span>
 							</div>
 						</b>
 					</div>
-					<div class="values-shape">
+					<div class="shape--container__formulas">
 						<b><span>A</span> <span>=</span> <span id="triangle-area">0</span></b>
 					</div>
-					<div class="label-input">
-						<label for="base"><b class="values">b</b> Base</label>
-						<input id="base" class="input-value" type="number" name="base" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="base">
+							<b class="sign-value">b</b>
+							<span>Base</span>
+						</label>
+						<input id="base" class="field-value" type="number" name="base" placeholder="Enter a value">
 					</div>
-					<div class="label-input">
-						<label for="height"><b class="values"><span>h</span><span class="power-reversi">b</span></b> Height</label>
-						<input id="height" class="input-value" type="number" name="height" placeholder="Enter a value">
+					<div class="shape--container__values">
+						<label class="label-value" for="height">
+							<b class="sign-value">
+								<span>h</span><span class="power-reversi">b</span>
+							</b>
+							<span>Height</span>
+						</label>
+						<input id="height" class="field-value" type="number" name="height" placeholder="Enter a value">
 					</div>
 				</div>
 				<img src="images/triangle.png">
 			</div>
-	</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="scripts/PromiseArea.js"></script>
 	<script type="text/javascript" src="scripts/javascript.js"></script>

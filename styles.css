@@ -1,7 +1,16 @@
+
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.header--btn-calculate {
+	background-color:  white;
+	border: 1px solid lightgray;
+	height: 50px;
+	margin: 10px;
+	padding: 0 13px;
 }
 
 h1 {
@@ -9,9 +18,11 @@ h1 {
 	text-align: center;
 }
 
-h2 {
-	color: gray;
-	font-family: sans-serif;
+.shape--container {
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .shapes {
@@ -19,29 +30,33 @@ h2 {
 	flex-wrap: wrap;
 }
 
-label {
-	color: gray;
+.shape {
+	border: 1px solid lightgray;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 20px;
 }
 
-.values {
+.shape--title {
+	color: gray;
+	font-family: sans-serif;
+}
+
+.shape--container__formulas {
+	font-size: 24px;
+	font-family: cursive;
+}
+
+.shape--container__values {
+	margin: 5px 0;
+}
+
+.sign-value {
 	color: black;
     font-family: sans-serif;
     font-size: 20px;
     margin-right: 6px;
-}
-
-.label-input {
-	margin: 5px 0;
-}
-
-.input-value {
-	margin: 5px 0;
-	padding: 5px 10px;
-}
-
-.values-shape {
-	font-size: 24px;
-	font-family: cursive;
 }
 
 .power {
@@ -54,7 +69,17 @@ label {
     vertical-align: sub;
 }
 
-.divider {
+.formulas--division {
+	display: flex;
+	align-items: center;
+}
+
+.formulas--division__symbols {
+	margin-right: 10px;
+	text-align: center;
+}
+
+.symbols--divider {
     background-color: black;
 	display: block;
     height: 1px;
@@ -62,39 +87,11 @@ label {
     width: 100%;
 }
 
-.calc-division {
-	display: flex;
-	align-items: center;
+.label-value {
+	color: gray;
 }
 
-.division-area {
-	margin-right: 10px;
-}
-
-.division {
-	display: inline-block;
-	text-align: center;
-}
-
-.shape {
-	border: 1px solid lightgray;
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	padding: 20px;
-}
-
-.shape--element {
-	display: flex;
-	align-items: center;
-    flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.btn-calculate {
-	background-color:  white;
-	border: 1px solid lightgray;
-	height: 50px;
-	margin: 10px;
-	padding: 0 13px;
+.field-value {
+	margin: 5px 0;
+	padding: 5px 10px;
 }

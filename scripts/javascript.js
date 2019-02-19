@@ -1,3 +1,5 @@
+
+// get the values of the inputs, calculate areas and insert the values on span tags
 function calculateAreas() {
 	let shapes = ["square", "rectangle", "circle", "triangle"];
 	let side = +document.getElementById('side').value;
