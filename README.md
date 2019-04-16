@@ -2,7 +2,7 @@
 
 Calculate area of shapes as square, rectangle, circle and triangle.
 
-# Technologies used
+## Used technologies
 
 - HTML
 - CSS
